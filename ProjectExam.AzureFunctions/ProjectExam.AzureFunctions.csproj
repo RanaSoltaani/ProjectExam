@@ -14,6 +14,18 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.16.4" />
     <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.21.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectExam.DbContext\ProjectExam.DbContext.csproj" />
+    <ProjectReference Include="..\ProjectExam.Models\ProjectExam.Models.csproj" />
+    <ProjectReference Include="..\ProjectExam.Repositories.Contracts\ProjectExam.Repositories.Contracts.csproj" />
+    <ProjectReference Include="..\ProjectExam.Repositories\ProjectExam.Repositories.csproj" />
+    <ProjectReference Include="..\ProjectExam.Services.Contracts\ProjectExam.Services.Contracts.csproj" />
+    <ProjectReference Include="..\ProjectExam.Services\ProjectExam.Services.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
