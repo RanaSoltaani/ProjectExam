@@ -6,7 +6,7 @@ using ProjectExam.Services.Contracts;
 
 
 namespace ProjectExam.AzureFunctions.AzureFunctions.Event
-{
+{   
     public class DeleteEvent
     {
         private readonly IEventService _eventService;

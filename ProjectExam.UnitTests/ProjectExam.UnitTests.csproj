@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="xunit.assert" Version="2.7.0" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectExam.AzureFunctions\ProjectExam.AzureFunctions.csproj" />
+    <ProjectReference Include="..\ProjectExam.Services.Contracts\ProjectExam.Services.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
