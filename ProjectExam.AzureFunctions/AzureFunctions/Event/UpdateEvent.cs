@@ -18,7 +18,7 @@ namespace ProjectExam.AzureFunctions.AzureFunctions.Event
             _eventService = eventService;
         }
 
-        [FunctionName("UpdateEvent")]
+        [Function("UpdateEvent")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "put", Route = "events/{id}")] HttpRequest req,
             ILogger log, string id)
