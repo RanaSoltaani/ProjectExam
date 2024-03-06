@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectExam.DbContext\ProjectExam.DbContext.csproj" />
+    <ProjectReference Include="..\ProjectExam.Models\ProjectExam.Models.csproj" />
+    <ProjectReference Include="..\ProjectExam.Repositories.Contracts\ProjectExam.Repositories.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>

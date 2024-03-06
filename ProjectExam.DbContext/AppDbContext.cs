@@ -12,11 +12,8 @@ public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext
 
     }
 
-    // Propriété DbSet pour la table "object"
-    public DbSet<MyObject> Objects { get; set; }
 
-    // Propriété DbSet pour la table "user"
-    public DbSet<User> Users { get; set; }
+    public DbSet<Event> Events { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
