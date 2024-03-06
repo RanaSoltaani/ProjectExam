@@ -32,7 +32,7 @@ namespace ProjectExam.AzureFunctions.AzureFunctions.Event
             catch (Exception ex)
             {
                 log.LogError(ex, "Error getting events.");
-                return new ObjectResult(e.Message) { StatusCode = 500 };
+                return new ObjectResult(ex.Message) { StatusCode = 500 };
             }
         }
     }
