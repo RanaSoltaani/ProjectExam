@@ -9,7 +9,9 @@ namespace ProjectExam.Models
 {
     public class Event
     {
-        [Key]
+
+
+        [Key] public Guid EventId { get; set; }
         public string Title { get; set; }
 
         public string Descrption { get; set; }
